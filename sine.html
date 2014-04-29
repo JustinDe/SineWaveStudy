@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>SineWave</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body onload="buildWave();">
+		<div id="canvasArea">
+			<canvas id="mycanvas" width="500" height="200" style="border:1px solid #d3d3d3;">
+		</div>
+		<div id="options">
+			<input type="checkbox" id="cb_baseline" name="baseline" onClick="reDraw();"> Base Line <br />
+			<input type="checkbox" id="cb_sinewave" name="sinewave" onClick="reDraw();"> Sine Wave <br />
+			<input type="checkbox" id="cb_top" name="top" onClick="reDraw();"> Top <br />
+			<input type="checkbox" id="cb_bottom" name="bottom" onClick="reDraw();"> Bottom <br />
+			<input type="checkbox" id="cb_innerwave" name="innerwave" onClick="reDraw();"> Inner Wave <br />
+			<script src="sine.js"></script>
+		</div>
+	</body>
+</html>
